@@ -34,13 +34,17 @@
         <span class="title-bg">Intro to HTML & CSS</span><br>
         <span class="title-bg">Building a Multi-page website</span>
         </h1>
-        <h2><span>with</span> Shakiba Jalal</h2>
-
+        <h2><span>with</span> Shakiba Jalal <span>and</span> Sarah Etter</h2>
         <img class="instructor-img" src="framework/img/shakiba.jpg" alt="Shakiba Jalal">
+        <img class="instructor-img" src="framework/img/sarah.png" alt="Sarah Etter">
+		
         <ul>
-        <li><i class="fa fa-envelope"></i><a href="mailto:shakiba.jalal@gmail.com">shakiba.jalal@gmail.com</a></li>
+        	<li><i class="fa fa-envelope"></i><a href="mailto:shakiba.jalal@gmail.com">shakiba.jalal@gmail.com</a></li>
+        	<li><i class="fa fa-envelope"></i><a href="mailto:sarah@sarahetter.com">sarah@sarahetter.com</a></li>
         </ul>
+      
     </div>
+    
     </header>
 
     <main>
@@ -302,7 +306,7 @@ Visit &lt;a href="http://ladieslearningcode.com">Ladies Learning Code&lt;/a>.
         </section>
 
         <section class="slide" data-markdown>
-##Exercise #1 - Making & Saving Changes (10 mins)
+##Exercise - Making & Saving Changes (10 mins)
 
 1. In your text editor (Sublime Text), update your name and tagline
     * change the text *in between* the `&lt;h1>&lt;/h1>` and `&lt;h2>&lt;/h2>` tags
@@ -427,6 +431,37 @@ The `&lt;div&gt;` is still valid but HTML5 introduced a number of semantic tags 
 ```
 More about HTML5 here: http://html5doctor.com
         </section>
+        
+        <section class="slide" data-markdown>
+##Exercise: adding content
+
+Follow the instructions below to complete the exercise. We are still just adding HTML content so don't worry about how to style the page elements just yet. 
+
+Let's add the following items to your index.html page:
+
+1. Add a header tag in your document.
+2. Move over your h1 and h2 tags so they are inside your header tag
+3. Inside your header tag, add a nav tag after your h2 tag
+4. Inside your nav tag, create an unordered list with 3 list items.
+5. Inside each list item, add an internal link.
+
+*Note - You don't need to put anything inside your href attribute right now*  
+
+
+    &lt;header&gt;
+        &lt;h1&gt;Jane Smith&lt;/h1&gt;
+        &lt;h2&gt;Web Developer + City Girl&lt;/h2&gt;
+
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="">Home&lt;/a>&lt;/li&gt;
+                &lt;li&gt;&lt;a href="">About&lt;/a>&lt;/li&gt;
+                &lt;li&gt;&lt;a href="">Contact&lt;/a>&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+        </section>
     
         <section class="slide" data-markdown>
 ##Good file naming habits
@@ -449,25 +484,52 @@ Before we start another exercise, lets go over some best practices.
         </section>
 
         <section class="slide" data-markdown>
-##Exercise #2 - Adding pages and content (20mins)
+##Exercise - Add an About page 
 
 Follow the instructions below to complete the exercise. We are still just adding HTML content so don't worry about how to style the page elements just yet. If you get stuck, you can take a peek in the examples folder: [exercise2-home.html](project/examples/exercise2-home.html), [exercise2-about.html](project/examples/exercise2-about.html), [exercise2-contact.html](project/examples/exercise2-contact.html)
+
+
+
+1. To create an About page, create a new file and name it **about.html**
+2. Save it in the same folder as **index.html** (project folder)
+3. Copy over the HTML contents from index.html
+4. Use **relative** links to navigate between pages
+
+
 
 **Protip!** Copy and paste repeated content using keyboard shortcuts to speed up your work flow.  
 `ctrl/cmnd + c` to copy  
 `ctrl/cmnd + x` to copy and cut    
 `ctrl/cmnd + v` to paste  
 `ctrl/cmnd + s` to save
+        </section>
+        
+        <section class="slide" data-markdown>
+##Exercise - Add a Contact page 
 
-1. Create an About page and name it **about.html**
-    * Save it in the same folder as **index.html** (project folder)
-    * Be sure to include all the basic HTML tags
-    * Add the header and nav markup referenced in [HTML5 Sectioning Tags](index.html#slide23)
-    * Use **relative** links to navigate between pages
-    * Add the footer content created in **index.html** in the previous exercise.
-1. Create a Contact page and name it **contact.html**
-    * Follow the same instructions as the About page
-1. Add the same navigation markup and relative links to **index.html** *BUT* since the structure and style is different, put the nav HTML **above** the header tag, not inside like About and Contact. The order of the HTML will matter when we add CSS to it later.
+Follow the instructions below to complete the exercise. We are still just adding HTML content so don't worry about how to style the page elements just yet. If you get stuck, you can take a peek in the examples folder: [exercise2-home.html](project/examples/exercise2-home.html), [exercise2-about.html](project/examples/exercise2-about.html), [exercise2-contact.html](project/examples/exercise2-contact.html)
+
+
+
+1. Create a Contact page and name it **contact.html** *Note: These are the same instructions as the About page*
+2. Save it in the same folder as **index.html** (project folder)
+3. Copy over the HTML contents from index.html
+4. Use **relative** links to navigate between pages
+
+ 
+
+        </section>
+        
+                <section class="slide" data-markdown>
+##Exercise - Edit your home page 
+
+Follow the instructions below to complete the exercise. We are still just adding HTML content so don't worry about how to style the page elements just yet. If you get stuck, you can take a peek in the examples folder: [exercise2-home.html](project/examples/exercise2-home.html), [exercise2-about.html](project/examples/exercise2-about.html), [exercise2-contact.html](project/examples/exercise2-contact.html)
+
+
+Edit **index.html** with the following steps:
+
+1. Add the same relative links to **index.html** 
+2. Since the structure and style is different, put the nav HTML **above** the header tag, not inside like About and Contact. The order of the HTML will matter when we add CSS to it later. See below code snippet for help:
 
 ```xml
 &lt;nav&gt;
@@ -483,7 +545,13 @@ Follow the instructions below to complete the exercise. We are still just adding
     &lt;h2&gt;Web Developer + City Girl&lt;/h2&gt;  
 &lt;/header&gt;
 ```
+
+![project home page](framework/img/workshop/project1.jpg)
+![project about page](framework/img/workshop/project2.jpg)
+![project contact page](framework/img/workshop/project3.jpg)
+
         </section>
+
 
         <section class="slide" data-markdown>
 ##Leave a Comment
@@ -500,6 +568,31 @@ The syntax for comments start with `&lt;!--` and ends with `--&gt;`.
 &lt;!-- This is my comment. Comments should always be included between the dashes. -->
 ```
         </section>
+        
+        <section class="slide" data-markdown>
+##Exercise: Comment
+
+Add a comment to your index.html file. Add any comment you wish!
+
+```xml
+&lt;!-- Need to have nav outside of header for home page only --&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="">Home&lt;/a>&lt;/li&gt;
+        &lt;li&gt;&lt;a href="">About&lt;/a>&lt;/li&gt;
+        &lt;li&gt;&lt;a href="">Contact&lt;/a>&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;header&gt;
+    &lt;h1&gt;Jane Smith&lt;/h1&gt;
+    &lt;h2&gt;Web Developer + City Girl&lt;/h2&gt;  
+&lt;/header&gt;
+```
+
+Save it and reload your website. You should not see any changes. 
+
+</section>
 
         <section class="slide">
             <h2>Void / Self-closing Element</h2>
@@ -540,6 +633,7 @@ The syntax for comments start with `&lt;!--` and ends with `--&gt;`.
             <li>and <a href="http://www.hanselman.com/blog/TheInternetsBestPlaceholderImageSitesForWebDevelopment.aspx">many more</a>!</li>
             </ul>
         </section>
+        
 
         <section class="slide" data-markdown>
 ##The alt attribute
@@ -597,7 +691,7 @@ There are many different file types that can be used for the web. Each type is b
         </section>
 
         <section class="slide" data-markdown>
-##Exercise #3 - Update the About page (15 mins)
+##Exercise - Update the About page (15 mins)
 
 Let's add some more content to your About page. Use the `&lt;section>` tag to create a new sectioning block for the page content and add it under the `&lt;header>` tag and before the `&lt;footer>` like this:
 
@@ -693,28 +787,6 @@ Older presentational HTML tags like `&lt;center>` and `&lt;font>` should no long
             </ul>        
         </section>
 
-        <section class="slide" data-markdown>
-            ##Descendant selectors
-            
-            Matches any element that is a descendant (nested tag) of the element declared before it.
-            
-            ```css
-            p a {
-                /* targets only anchor link tags nested inside of a p tag */
-            }
-            ```
-            **Protip!** Just like [Inception](http://www.imdb.com/title/tt1375666/), never go more than three levels deep. Truth.
-
-            ```
-            nav ul li a span {
-                /* NOOOOOOOOOOO */
-            }
-            ```
-
-            Feel free to skip a level but be mindful of specificity rules. For example, `nav ul li a` would override `nav a` because it's more specific. 
-
-            It’s usually easier to start with generic selectors and make them more specific, as needed, rather than starting with very specific selectors and adding extra markup or classes to try to override the styles.
-        </section>
 
         <section class="slide" data-markdown>
             ##Comments
@@ -740,37 +812,7 @@ Older presentational HTML tags like `&lt;center>` and `&lt;font>` should no long
             ``` 
         </section>
 
-        <section class="slide" data-markdown>
-##Referencing CSS - Inline & Internal
-
-There are three ways to include (otherwise known as *referencing*) CSS in an HTML page.
-
-**INLINE** - can be added to any HTML element using the `style` *attribute*.
-
-```
-&lt;p style=&quot;color: blue;&quot;&gt;I'm writing CSS!&lt;/p&gt;
-```
-
-This technique should be avoided but it's good to know how it works in case you encounter it "in the wild."
-
-**INTERNAL** - uses `&lt;style&gt;` and is included in the `&lt;head&gt;` element.
-
-```    
-&lt;head&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
-    &lt;style&gt;
-        h1 {
-            font-size: 16px;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;p&gt;I'm still writing CSS!&lt;/p&gt;
-&lt;/body&gt;
-```
-
-This method is preferred over *inline* css, however it is still inefficient because if you had multiple web pages, the style block and any revision would have to be replicated on every single page.
-        </section>
+        
 
         <section class="slide" data-markdown>
 ##Referencing CSS - External
@@ -821,6 +863,61 @@ body {
 }
 ```
         </section>
+        
+        <section class="slide" data-markdown>
+##FYI: Referencing CSS using Inline & Internal
+
+There are three ways to include (otherwise known as *referencing*) CSS in an HTML page.
+
+**INLINE** - can be added to any HTML element using the `style` *attribute*.
+
+```
+&lt;p style=&quot;color: blue;&quot;&gt;I'm writing CSS!&lt;/p&gt;
+```
+
+This technique should be avoided but it's good to know how it works in case you encounter it "in the wild."
+
+**INTERNAL** - uses `&lt;style&gt;` and is included in the `&lt;head&gt;` element.
+
+```    
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            font-size: 16px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;I'm still writing CSS!&lt;/p&gt;
+&lt;/body&gt;
+```
+
+This method is preferred over *inline* css, however it is still inefficient because if you had multiple web pages, the style block and any revision would have to be replicated on every single page.
+        </section>
+        
+        <section class="slide" data-markdown>
+            ## Descendant selectors
+            
+            Matches any element that is a descendant (nested tag) of the element declared before it.
+            
+            ```css
+            p a {
+                /* targets only anchor link tags nested inside of a p tag */
+            }
+            ```
+            **Protip!** Just like [Inception](http://www.imdb.com/title/tt1375666/), never go more than three levels deep. Truth.
+
+            ```
+            nav ul li a span {
+                /* NOOOOOOOOOOO */
+            }
+            ```
+
+            Feel free to skip a level but be mindful of specificity rules. For example, `nav ul li a` would override `nav a` because it's more specific. 
+
+            It’s usually easier to start with generic selectors and make them more specific, as needed, rather than starting with very specific selectors and adding extra markup or classes to try to override the styles.
+        </section>
 
         <section class="slide title" data-markdown>
             #CSS & TYPOGRAPHY
@@ -856,6 +953,41 @@ body {
 
             That's it!
         </section>
+        
+        <section class="slide" data-markdown>
+##Exercise - Web fonts
+
+1. Practice using [Google Fonts](https://www.google.com/fonts).  Find 2-3 fonts to be used for the body text, header and highlighted text.  
+
+    Picking fonts is hard. Need some help?  Try Source Sans Pro, Quicksand, Merriweather or Codystar.  The example project uses Open Sans (light), Nixie One and Pacifico. 
+
+1. Add the Google font stylesheet to the `&lt;head>` of all three documents so the font files will load and can be accessed.  Put it *before* your CSS file.
+
+    ```
+    &lt;title&gt;Jane Smith | About Me&lt;/title&gt;
+    &lt;link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico' rel='stylesheet' type='text/css'&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    ```
+
+1. In the sample project, most of our site uses the same font except for the `h1`.  Let's put the main font styles using the `body` selector.
+
+    ```
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+    ```
+    Remember the family tree?  Since `body` is the ancestor of all the elements nested within, these styles are *inherited* by the child & descendant elements.
+
+1. Let's make the main heading (your name) a different font to set it apart from the rest of the headings. Since this style is going to be applied only to the main heading, use `h1` as the selector.
+
+    ```
+    h1 {
+        font-family: "Nixie One", serif;
+    }
+    ```
+
+
+        </section>
             
         <section class="slide" data-markdown>
             ##CSS color property
@@ -874,6 +1006,35 @@ body {
             http://flatuicolors.com   
             http://color.hailpixel.com
         </section>
+        
+        <section class="slide" data-markdown>
+##Exercise - Colors
+
+
+
+1. In the sample project, most of our site uses the same color except for the `h1` and a couple of accented blocks of text.  Let's put the main font styles using the `body` selector.
+
+    ```
+    body {
+        font-family: "Open Sans", sans-serif;
+        color: #333;
+    }
+    ```
+    
+
+
+1. Links by default are blue in colour so it does not inherit the color property declared in the body.  To change the colour of the link, use the specific element selector.  
+
+    Make the color different from the rest of the text to indicate it's a link.  
+    ```
+    a {
+      color: #bf6d50;
+      
+    }
+    ```
+
+
+        </section>
 
 
         <section class="slide">
@@ -891,6 +1052,29 @@ text-transform: lowercase;</textarea>
             </div>
 
             <p>Resource: <a href="http://reference.sitepoint.com/css/typography">Sitepoint Typographical Properties</a></p>
+        </section>
+        
+        <section class="slide" data-markdown>
+##Exercise - font styles
+
+
+1. Both `h1` and `h2` share similar styles. They both are styled with uppercase letters and don't use the default bold styles of headings.  When multiple elements share the same styles, we can **combine** selectors to apply the styles in one declaration block.  Combine selectors by separating them with a comma.
+
+    ```
+    h1, h2 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    ```
+1. We already changed the default color of our links. Let's remove the default underline with CSS as well!
+    ```
+    a {
+      color: #bf6d50;
+      text-decoration: none;
+    }
+    ```
+
+Your page should look like [example 4](project/examples/exercise4-about.html).  As long as your CSS file is linked on three pages, notice how the styles are now shared across all three pages.
         </section>
 
         <section class="slide" data-markdown>
@@ -933,58 +1117,7 @@ text-transform: lowercase;</textarea>
             In the above example, the CSS properties in the body selector is inherited by the children and descendants so all the text would be blue and display the Helvetica font. However, when a more specific selector is used (`h1`), it overrides the inherited values because it's more *specific*.
         </section>
     
-        <section class="slide" data-markdown>
-##Exercise #4 - Typography
-
-1. Practice using [Google Fonts](https://www.google.com/fonts).  Find 2-3 fonts to be used for the body text, header and highlighted text.  
-
-    Picking fonts is hard. Need some help?  Try Source Sans Pro, Quicksand, Merriweather or Codystar.  The example project uses Open Sans (light), Nixie One and Pacifico. 
-
-1. Add the Google font stylesheet to the `&lt;head>` of all three documents so the font files will load and can be accessed.  Put it *before* your CSS file.
-
-    ```
-    &lt;title&gt;Jane Smith | About Me&lt;/title&gt;
-    &lt;link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico' rel='stylesheet' type='text/css'&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
-    ```
-
-1. In the sample project, most of site uses the same font and color except for the `h1` and a couple of accented blocks of text.  Let's put the main font styles using the `body` selector.
-
-    ```
-    body {
-        font-family: "Open Sans", sans-serif;
-        color: #333;
-    }
-    ```
-    Remember the family tree?  Since `body` is the ancestor of all the elements nested within, these styles are *inherited* by the child & descendant elements.
-
-1. Let's make the main heading (your name) a different font to set it apart from the rest of the headings. Since this style is going to be applied only to the main heading, use `h1` as the selector.
-
-    ```
-    h1 {
-        font-family: "Nixie One", serif;
-    }
-    ```
-1. Both `h1` and `h2` share similar styles. They both are styled with uppercase letters and don't use the default bold styles of headings.  When multiple elements share the same styles, we can **combine** selectors to apply the styles in one declaration block.  Combine selectors by separating them with a comma.
-
-    ```
-    h1, h2 {
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-    ```
-1. Links by default are blue in colour so it does not inherit the color property declared in the body.  To change the colour of the link, use the specific element selector.  
-
-    Make the color different from the rest of the text to indicate it's a link.  You can also remove the default underline with CSS as well!
-    ```
-    a {
-      color: #bf6d50;
-      text-decoration: none;
-    }
-    ```
-
-Your page should look like [example 4](project/examples/exercise4-about.html).  As long as your CSS file is linked on three pages, notice how the styles are now shared across all three pages.
-        </section>
+       
 
         <section class="slide title" data-markdown>
             #The Box Model
@@ -1130,8 +1263,16 @@ margin: 0;</textarea>
 
             **Extra Resource**: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
         </section>
+        
+         <section class="slide" data-markdown>
+         ##Block & Inline Example
+         
+         ![](framework/img/inline_and_block.png)
+        
+        
+        </section>
 
-        <section class="slide">
+        <section class="slide" >
             <h2>Block & Inline Example</h2>
             <p>Suppose we had this HTML below. See how the same property and values give different results based on the element. Go ahead and update the CSS values to see how it changes.</p>
 
@@ -1226,7 +1367,7 @@ margin: 25px;</textarea>
         </section>
 
         <section class="slide" data-markdown>
-            ##Exercise #5 - Header & Nav (15 mins)
+            ##Exercise - Header & Nav (15 mins)
 
             Follow the instructions below as far as you can. Check these changes on either the About or Contact page. The Home page will be styled after since it's different from the other two pages.
 
@@ -1284,6 +1425,13 @@ margin: 25px;</textarea>
                 }
                 ```
         </section>
+        
+       <section class="slide title" data-markdown>
+            #Positioning 
+            #& Selectors
+
+        </section>
+        
         <section class="slide" data-markdown>
             ##Positioning in CSS
             
@@ -1434,7 +1582,7 @@ margin: 25px;</textarea>
         </section>
 
         <section class="slide" data-markdown>
-            ##Exercise #6 - About, Header & Nav, pt 2
+            ##Exercise - About, Header & Nav, pt 2
 
             1. Position the nav to the top right of the header element.
             
@@ -1513,7 +1661,7 @@ margin: 25px;</textarea>
             ```
         </section>
         <section class="slide" data-markdown>
-            ##Exercise #7 - Homepage Header & Nav
+            ##Exercise - Homepage Header & Nav
 
             Override the header styles not needed for the home page.
             * remove the fixed positioning
@@ -1560,7 +1708,7 @@ margin: 25px;</textarea>
         </section>
 
         <section class="slide" data-markdown>
-##Exercise #8 - Sticky Footer
+##Exercise - Sticky Footer
 
 First, we need to create a page wrapper around the page content only, not the footer content.  The home page HTML will look like similar to this: 
 
@@ -1627,6 +1775,12 @@ The about and contact pages will look like this:
             Compare your page with [example 8](project/examples/exercise8-home.html).
         </section>
 
+		<section class="slide title" data-markdown>
+            #Contact Form
+            #& Background Images
+
+        </section>
+
         <section class="slide" data-markdown>
             ##Forms: organizing the interface
             
@@ -1665,7 +1819,7 @@ The about and contact pages will look like this:
         </section>
 
         <section class="slide" data-markdown>
-            ##Exercise #9 - Contact Form
+            ##Exercise - Contact Form
 
             On your contact page, under the header, create a `&lt;section>` tag.  Add the below markup *in between* the `section` element.
 
@@ -1696,7 +1850,7 @@ The about and contact pages will look like this:
             Your contact page and form should look similar to [Example 9](project/examples/exercise9-contact.html).
         </section>
         <section class="slide" data-markdown>
-            ##Exercise #10 - Background Images
+            ##Exercise - Background Images
 
             Before we style the contact form, let's go over how background images work.  We've added images in the HTML using `img` but we can also set images as a background style using CSS.
             
@@ -1764,7 +1918,7 @@ The about and contact pages will look like this:
         </section>
 
         <section class="slide" data-markdown>
-            ##Exercise #10 - Background Images (continued)
+            ##Exercise - Background Images (continued)
 
             1. Go back to the `.contact` CSS and add the background-size option.
             
@@ -1801,7 +1955,7 @@ margin: 0 auto;</textarea>
         </section>
 
         <section class="slide" data-markdown>
-            ##Exercise #11 - Contact Form (continued)
+            ##Exercise - Contact Form (continued)
 
             In the markup for the form, a class of `contact-form` was included in the `form` tag to be used for styling since all the form elements are contained within it.
 
@@ -1843,9 +1997,15 @@ margin: 0 auto;</textarea>
 
             There's so much more you can do with forms. Check out this project's final css file to see what other changes you can add or take a look at this resource: http://code.tiffbits.com/css3-form-styling-cheat-sheet/
         </section>
+        
+        <section class="slide title" data-markdown>
+            #Final Exercise: Drop down Menu
+
+        </section>
+        
 
         <section class="slide" data-markdown>
-            ##Getting ready Final Exercise #12
+            ##Getting ready Final Exercise 
 
             Before creating the home page drop down menu, we'll need to talk about icon fonts and pseudo class first.
             
@@ -1865,7 +2025,7 @@ margin: 0 auto;</textarea>
             More about pseudo classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
         </section>
         <section class="slide" data-markdown>
-            ##Exercise #12 - Home Page Drop down menu
+            ##Exercise - Home Page Drop down menu
 
             1. Add [Font Awesome's CSS file](http://fortawesome.github.io/Font-Awesome/get-started/) to the `head` of your document and the markup for the [three-bar icon](http://fortawesome.github.io/Font-Awesome/icon/bars/) to the navigation.
             ```
@@ -1885,7 +2045,7 @@ margin: 0 auto;</textarea>
             ![](framework/img/workshop/menu-with-icon.png)
         </section>
         <section class="slide" data-markdown>
-            ##Exercise #12 - Home Page Drop down menu
+            ##Exercise - Home Page Drop down menu
             
             The next step is to override the horizontal navigation styles that are shared among the other pages and make it specific to the home page.  There is already a class of `home` in the body so we can use that to make our selector more specific.
 
@@ -1959,7 +2119,6 @@ margin: 0 auto;</textarea>
         <!-- Last slide -->
         <section class="slide">
             <h2>Thank you!</h2>
-            <p>Closing remarks</p>
             <p class="attribution">Slide deck presentation created with <a href="https://github.com/LeaVerou/csss">Lea Verou's CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
         </section>
 
